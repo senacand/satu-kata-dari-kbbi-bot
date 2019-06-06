@@ -8,6 +8,7 @@ require('dotenv').config()
 
 const fbAccessToken = process.env.FB_ACCESS_TOKEN;
 const fbPageId = process.env.FB_PAGE_ID;
+const imgurClientId = process.env.IMGUR_CLIENT_ID;
 const kategloUrl = "http://kateglo.com/api.php?format=json&phrase=";
 
 const { createCanvas, loadImage, registerFont } = require('canvas')
@@ -17,6 +18,9 @@ registerFont('Montserrat.ttf', { family: 'Montserrat' });
 
 // Set Facebook Access Token
 FB.setAccessToken(fbAccessToken);
+
+// Set Imgur Client ID
+imgur.setClientId(imgurClientId);
 
 // Load list of words
 const contents = fs.readFileSync('kata_dasar_kbbi.csv', { encoding: 'utf-8' });
