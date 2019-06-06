@@ -1,0 +1,23 @@
+{
+  "name": "wordgenerator",
+  "version": "1.0.0",
+  "description": "Word Generator",
+  "main": "generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "word",
+    "generator",
+    "facebook"
+  ],
+  "author": "senacand",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.5.0",
+    "dotenv": "^8.0.0",
+    "fb": "^2.0.0",
+    "imgur": "^0.3.1",
+    "node-fetch": "^2.6.0"
+  }
+}
